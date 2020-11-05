@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Fotorama</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+  </head>
+  <body>
+    <div class="docm">
+      <h1>Dokumentasi Jquery Plugin Fotorama</h1>
+    </div>
+    <div class="fotorama" data-arrows="true" data-click="true">
+      <img src="https://s.fotorama.io/1.jpg">
+      <img src="https://s.fotorama.io/2.jpg">
+      <img src="https://s.fotorama.io/3.jpg">
+      <img src="https://s.fotorama.io/4.jpg">
+      <img src="https://s.fotorama.io/5.jpg">
+    </div>
+
+    <div class="container">
+      <h4>ditambahkan code:  </h4>
+      <div class="codebox">
+        <code> <br>dibagian class="fotorama"<br>
+        <span class="codetxt">data-nav="thumbs"<br></span><br>
+        yang menambahkan gambar thumbnail.
+        </code>
+      </div><br>
+      <div class="fotorama" data-arrows="true" data-click="true" data-nav="thumbs">
+        <img src="https://s.fotorama.io/1.jpg">
+        <img src="https://s.fotorama.io/2.jpg">
+        <img src="https://s.fotorama.io/3.jpg">
+        <img src="https://s.fotorama.io/4.jpg">
+        <img src="https://s.fotorama.io/5.jpg">
+      </div>
+
+      <h4>ditambahkan code: </h4>
+      <div class="codebox">
+        <code>dalam tag class="fotorama"<br>
+        <span class="codetxt">div class="fotorama" data-transition="crossfade"</span><br><br>
+        data-transition="crossfade" : digunakan untuk animasi crossfade.
+        </code>
+      </div><br>
+      <div class="fotorama" data-arrows="true" data-click="true" data-nav="thumbs" data-transition="crossfade">
+        <img src="https://s.fotorama.io/1.jpg">
+        <img src="https://s.fotorama.io/2.jpg">
+        <img src="https://s.fotorama.io/3.jpg">
+        <img src="https://s.fotorama.io/4.jpg">
+        <img src="https://s.fotorama.io/5.jpg">
+      </div>
+      <h4>ditambahkan code: </h4>
+      <div class="codebox">
+        <code>dalam tag class="fotorama"<br>
+        <span class="codetxt">div class="fotorama" data-loop="true"</span><br><br>
+        data-loop="true" : untuk membuat loop.
+        </code>
+      </div><br>
+      <div class="fotorama" data-arrows="true" data-click="true" data-nav="thumbs" data-transition="crossfade" data-loop="true">
+        <img src="https://s.fotorama.io/1.jpg">
+        <img src="https://s.fotorama.io/2.jpg">
+        <img src="https://s.fotorama.io/3.jpg">
+        <img src="https://s.fotorama.io/4.jpg">
+        <img src="https://s.fotorama.io/5.jpg">
+      </div>
+      <h4>ditambahkan code: </h4>
+      <div class="codebox">
+        <code>dalam tag class="fotorama"<br>
+        <span class="codetxt">div class="fotorama" data-navposition="top"</span><br><br>
+        data-navposition="top" : untuk membuat posisi gambar thumbnail diatas.
+        </code>
+      </div><br>
+      <div class="fotorama" data-arrows="true" data-click="true" data-nav="thumbs" data-transition="crossfade" data-loop="true" data-navposition="top">
+        <img src="https://s.fotorama.io/1.jpg">
+        <img src="https://s.fotorama.io/2.jpg">
+        <img src="https://s.fotorama.io/3.jpg">
+        <img src="https://s.fotorama.io/4.jpg">
+        <img src="https://s.fotorama.io/5.jpg">
+      </div>
+    </div>
+  </body>
+  <footer>Copyright 2020 Meidison - Hanfrey / 31181002 - 311810016</footer>
+</html>
+
+<style>
+html body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+}
+  .docm{
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+  }
+  .fotorama{
+    margin: 0 auto;
+    width: 800px;
+    border-radius: 10px;
+  }
+  .codebox {
+        border:1px solid black;
+        background-color:#cdcdcd;
+        width:800px;
+        overflow:auto;
+        padding: 15px;
+        margin: 0 auto;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+    .codebox code {
+        font-size:0.9em;
+    }
+    .codetxt {
+      font-weight: bold;
+    }
+    .container h4{
+      text-align: center;
+    }
+    footer{
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 25px;
+    background-color: #cdcdcd;
+    text-align: center;
+    }
+</style>
